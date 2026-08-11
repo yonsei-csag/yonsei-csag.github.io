@@ -1,0 +1,162 @@
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+
+* {
+  font-family: 'Nanum Barun Gothic', sans-serif;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+  font-size: 12pt;
+}
+
+div#top {
+  max-width: 95%;
+  text-align: center;
+  margin: 10px auto;
+}
+div#top > img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  margin: 10px auto;
+}
+
+a:link,
+a:visited {
+  color: DarkBlue;
+  text-decoration: none;
+}
+a:hover {
+  color: DeepSkyBlue;
+  text-decoration: underline;
+}
+
+ul#menu {
+  max-width: 95%;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+}
+ul#menu > li {
+  flex: 0 1 content;
+  padding: 10px 30px;
+  text-align: center;
+}
+ul#menu > li .active {
+  font-weight: bold;
+}
+
+h1 { font-size: 18pt; }
+h2 { font-size: 16pt; }
+h3 { font-size: 14pt; }
+
+div#content {
+  max-width: 95%;
+  height: auto;
+  margin: auto;
+}
+div#content ul {
+  margin-top: 0.25em;
+  padding-left: 1.2em; /* Keeps green space small, but gives bullet room */
+  list-style-position: outside; /* Keeps second line aligned with text */
+}
+div#content sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size: 80%;
+  line-height: 0;
+}
+
+div#news > ul {
+  margin-top: 0.5em;
+  padding-left: 1.2em; /* Keeps green space small, but gives bullet room */
+  list-style-position: outside; /* Keeps second line aligned with text */
+}
+div#news > ul > li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul#professors {
+  /*
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 20px;
+
+  padding-left: 1.2em; /* Keeps green space small, but gives bullet room */
+  list-style-position: outside; /* Keeps second line aligned with text */
+  box-sizing: border-box;
+}
+ul#students {
+  /*
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+
+  padding-left: 1.2em; /* Keeps green space small, but gives bullet room */
+  list-style-position: outside; /* Keeps second line aligned with text */
+  box-sizing: border-box;
+}
+ul#professors > li,
+ul#students > li {
+  max-width: 95%;           /* Caps width to the viewport on mobile */
+  overflow-wrap: break-word; /* Forces long text or URLs to wrap */
+}
+ul#professors > li {
+  flex: 1 1 420px;
+  min-width: min(420px, 95%); /* Uses 420px on desktop, but scales down on small screens */
+}
+ul#students > li {
+  flex: 1 1 220px;
+  min-width: min(220px, 95%);
+}
+ul#professors > li > div,
+ul#students > li > div {
+  margin-top: 3px;
+  font-size: 80%;
+}
+
+span.label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .25em;
+  padding: 5px 3px 2px;
+}
+/* high-level classification (your fixed base colors) */
+span.label-compiler { background-color: #e15656; } /* Coral Red */
+span.label-os       { background-color: #2196F3; } /* Bright Blue */
+span.label-sec      { background-color: #f09322; } /* Warm Orange */
+span.label-arch     { background-color: #4CAF50; } /* Medium Green */
+span.label-sys      { background-color: #908C6F; } /* Muted Taupe */
+/* additional tags (toned-down palette) */
+span.label-cpu      { background-color: #52606D; } /* Steel Blue-Gray */
+span.label-gpu      { background-color: #0D9488; } /* Muted Teal */
+span.label-npu      { background-color: #3730A3; } /* Deep Indigo */
+span.label-pim      { background-color: #B44436; } /* Terracotta / Brick */
+span.label-fpga     { background-color: #B45309; } /* Bronze Amber */
+span.label-mobile   { background-color: #7E22CE; } /* Muted Violet */
+span.label-memory   { background-color: #9D174D; } /* Dark Rose / Plum */
+span.label-storage  { background-color: #374151; } /* Dark Charcoal */
+span.label-ai       { background-color: #4C1D95; } /* Deep Imperial Purple */
+span.label-cloud    { background-color: #0E7490; } /* Deep Cerulean */

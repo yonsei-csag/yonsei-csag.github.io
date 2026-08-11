@@ -1,0 +1,215 @@
+<html>
+  <head>
+
+    <!-- remove the following line when the website is ready for indexing -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      // Generates a random number cache-buster
+      link.href = 'style.css?v=' + Math.floor(Math.random() * 999999); 
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <title>csag@yonsei -- research</title>
+  </head>
+  <body>
+    <div id="top">
+      <img src="files/logo.png" height="100px" />
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1>Research Topics</h1>
+
+      <ul>
+
+        <!-- Prof. Yongjun Park -->
+        <li>
+          <b>Compiler Optimization for Deep Learning and Big Data Processing Applications on CPU/GPU/NPU/PIM-based Systems</b><br>
+          <span class="label label-compiler">Compiler</span>
+          <span class="label label-cpu">CPU</span>
+          <span class="label label-gpu">GPU</span>
+          <span class="label label-npu">NPU</span>
+          <span class="label label-pim">PIM</span>
+          <p align="justify">
+            Deep learning and Big Data Processing, which are widely used in Image processing and Pattern recognition, and SNS analysis, are currently processed using high-performance GPUs.
+            However, recent Deep learning and Big Data Processing applications require increasing memory requirement in both Inference and Training processes and also require high resource utilization on heterogeneous systems with CPU/GPU/NPUs.
+            We develop various compiler-level techniques that optimize memory utilization and perform efficient instruction scheduling on the heterogeneous environments.
+        </li>
+        <li>
+          <b>Efficient Multitasking Support for Multiple Deep Learning Applications on Heterogeneous Architectures</b><br>
+          <span class="label label-sys">Systems</span>
+          <span class="label label-cpu">CPU</span>
+          <span class="label label-gpu">GPU</span>
+          <span class="label label-npu">NPU</span>
+          <p align="justify">
+            Research goal: achieving maximum performance and power efficiency using runtime and compilation level optimization.
+          </p>
+        </li>
+        <li>
+          <b>Neural Accelerator Design and Compiler/OS support</b><br>
+          <span class="label label-arch">Architecture</span>
+          <span class="label label-npu">NPU</span>
+          <span class="label label-fpga">FPGA</span>
+          <ul>
+            <li>RTL-level custom neural accelerator design that can support various neural network algorithms efficiently</li>
+            <li>Various emerging application support using custom neural accelerators</li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>In-Storage Processing</b><br>
+          <span class="label label-sys">Systems</span>
+          <span class="label label-storage">Storage</span>
+          <p align="justify">
+            In-Storage Processing (ISP) is a method on near data processing (NDP), which does not load data in storage into DRAM memory but perform the workloads on the storage-side such as SSD.
+            Since ISP reduces I/O time substantially, significant overall performance improvement can be achieved. 
+            While the technique looks promising, to apply the ISP into real applications is not an easy problem.
+            Our research focuses on the following  aspects: (1) how to determine the workload that are performed on ISP, and (2) how to distribute those workloads at runtime.
+          </p>
+        </li>
+        <li>
+          <b>Flexible Vector Support for Supercomputing CPUs</b><br>
+          <span class="label label-arch">Architecture</span>
+          <span class="label label-cpu">CPU</span>
+          <ul>
+            <li>Development of ISA and Hardware for flexible vector units on supercomputing CPUs</li>
+            <li>Development of DVFS governor considering vector units</li>
+            <li>Research on efficient compiler support for flexible vector units</li>
+          </ul>
+        </li>
+        <br>
+
+        <!-- Prof. Jinkyu Jeong -->
+        <li>
+          <b>High-Performance Storage Systems</b><br>
+          <span class="label label-os">OS</span>
+          <span class="label label-storage">Storage</span>
+          <ul>
+            <li>Low-latency I/O stack for ultra low-latency SSDs</li>
+            <li>Low-latency I/O schedulers</li>
+            <li>Storage systems structure for limited DRAM scaling</li>
+            <li>Memory management unit extension for low-latency SSDs</li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>Performance Profiling</b><br>
+          <span class="label label-os">OS</span>
+          <ul>
+            <li>Sampling-based profiling of on-/off-CPU events</li>
+            <li>Virtual speedup of off-CPU events</li>
+            <li>Distributed virtual speedup based causality analysis</li>
+            <li>Target applications: distributed deep-learning, High-performance computing</li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>On-Device Machine Learning</b><br>
+          <span class="label label-os">OS</span>
+          <span class="label label-mobile">Mobile</span>
+          <span class="label label-ai">AI</span>
+          <ul>
+            <li>Memory-efficient machine learning inference</li>
+            <li>Flash SSD-friendly I/O streaming/prefetching/caching</li>
+            <li>Model compression/quantization</li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>Cloud Infrastructure</b><br>
+          <span class="label label-os">OS</span>
+          <span class="label label-cloud">Cloud</span>
+          <ul>
+            <li>High-performance memory-efficient microVM architecture</li>
+            <li>Secure serverless computing infrastructure</li>
+            <li>Performance/energy efficient serverless infrastructure</li>
+          </ul>
+        </li>
+        <br>
+
+        <!-- Prof. Dokyung Song -->
+        <li>
+          <b>Securing LLM &amp; Agentic Systems</b><br>
+          <span class="label label-sec">Security</span>
+          <span class="label label-ai">AI</span>
+          <p align="justify">
+            As Large Language Models (LLMs) and agentic systems are entrusted with sensitive data and consequential actions, they expose new attack surfaces.
+            Drawing on our experience protecting computation within trusted execution environments, using hardware security features such as ARM TrustZone alongside micro-hypervisor and compiler-based techniques, we design defenses that secure these systems, safeguarding their data, models, and decision-making against emerging threats.
+            Representative outcomes of this research topic include ASGARD [NDSS '25] and GuardiaNN [Middleware '22].
+          </p>
+        </li>
+        <li>
+          <b>Agentic Systems for Vulnerability Discovery</b><br>
+          <span class="label label-sec">Security</span>
+          <span class="label label-ai">AI</span>
+          <p align="justify">
+            Our prior work developed system-level techniques that automatically discover latent vulnerabilities in low-level software, including OS kernels, device drivers, and the hardware/OS boundary.
+            Building on this foundation, we are now designing agentic systems that autonomously reason about and discover vulnerabilities, pushing automated vulnerability discovery beyond the reach of fixed heuristics.
+            Selected publications for this topic include Moneta [NDSS '25], ReUSB [USENIX Security '23], Agamotto [USENIX Security '20], and PeriScope [NDSS '19].
+          </p>
+        </li>
+        <li>
+          <b>Agentic Systems for Binary Reverse Engineering</b><br>
+          <span class="label label-sec">Security</span>
+          <span class="label label-ai">AI</span>
+          <p align="justify">
+            Reverse engineering is labor-intensive, and existing automation often relies on brittle heuristics.
+            Building on our work applying machine learning to binary analysis, we are developing agentic systems that emulate the iterative reasoning of skilled reverse engineers to tackle core reverse-engineering challenges.
+            XBA [ISSTA '22] is a representative outcome of this research topic.
+          </p>
+        </li>
+
+        <!-- Prof. Youngsok Kim -->
+        <li>
+          <b>Next-Generation CPU/GPU Microarchitectures</b><br>
+          <span class="label label-arch">Architecture</span>
+          <span class="label label-cpu">CPU</span>
+          <span class="label label-gpu">GPU</span>
+          <p align="justify">
+            CPU and GPU are the two most widely deployed processors available on most desktops, servers, and mobile devices.
+            Still, their architectures continue to change as their primary target workloads change over time.
+            In this research, we design and propose next-generation CPU and GPU architectures to accommodate the ever-increasing performance demands of emerging CPU and GPU workloads.
+            We pursue both software- and hardware-oriented approaches by prototyping software-based performance optimizations on real CPUs and GPUs, and by evaluating architectural extensions using cycle-level simulators such as gem5 and Accel-Sim.
+            Examples of this research topic include LATPC [MICRO '25], GPUdmm [HPCA '14], and ScaleGPU [CAL '14].
+          </p>
+        </li>
+        <li>
+          <b>Simulation &amp; Performance Analysis/Modeling</b><br>
+          <span class="label label-arch">Architecture</span>
+          <span class="label label-cpu">CPU</span>
+          <span class="label label-gpu">GPU</span>
+          <p align="justify">
+            Cycle-level simulations are currently the most widely used performance evaluation technique, but they are too slow and will become much slower as processor microarchitectures become more complex.
+            Performance modeling, on the other hand, allows us to quickly predict an application's performance by raising the level of abstraction in architectural simulation.
+            Furthermore, systems can greatly benefit from performance modeling by being able to predict applications' performance with little overhead.
+            In this research, we propose faster but accurate performance evaluation methods that can serve as alternatives to the slow cycle-level simulations.
+            GCoM [ISCA '22], a fast and accurate analytical model for evaluating modern GPU architectures, and GCStack&plus;GCScaler [ISCA '25], a fast and accurate GPU performance analysis framework using fine-grained stall cycle accounting and interval analysis, are representative outcomes of this topic.
+          </p>
+        </li>
+        <li>
+          <b>Hardware-Accelerated Database Management System</b><br>
+          <span class="label label-sys">Systems</span>
+          <span class="label label-gpu">GPU</span>
+          <span class="label label-pim">PIM</span>
+          <p align="justify">
+            Database management systems (DBMSs; e.g., MySQL, MonetDB) are one of the most important server workloads as they allow users to capture and analyze large amounts of data.
+            Fast query processing is a key design goal of DBMSs, and we seek to achieve the goal through hardware acceleration.
+            In this research, to accelerate query processing, we analyze the key performance bottlenecks of the existing DBMSs and propose hardware acceleration techniques that fully exploit the high potential of modern hardware.
+            Example outcomes of this topic are PID-Join [SIGMOD '23], a fast in-memory join algorithm exploiting the processing-in-memory capabilities of commodity DIMM devices, and SPID-Join [SIGMOD '25], a skew-resistant in-memory join algorithm that achieves high skew resistance by leveraging the architectural characteristics of commodity processing-in-DIMM devices.
+            Additional example outcomes include FaScalSQL [ICDE '26], a fast and scalable GPU-accelerated analytical query engine for out-of-memory tables, and DMO-DB [PACT '25], which seeks to overcome the data movement bottlenecks of GPU-accelerated analytical query executions.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
