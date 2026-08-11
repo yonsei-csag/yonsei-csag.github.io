@@ -99,8 +99,8 @@ ul#students > li {
   overflow-wrap: break-word; /* Forces long text or URLs to wrap */
 }
 ul#professors > li {
-  flex: 1 1 420px;
-  min-width: min(420px, 95%); /* Uses 420px on desktop, but scales down on small screens */
+  flex: 0 1 460px;
+  min-width: min(460px, 95%);
 }
 ul#students > li {
   flex: 0 1 220px;
